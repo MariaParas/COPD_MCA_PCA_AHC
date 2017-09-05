@@ -15,7 +15,6 @@ barplot(eigenvalues[, 2], names.arg=1:nrow(eigenvalues),
         xlab = "Principal Components",
         ylab = "Percentage of variances",
         col ="steelblue")
-# Add connected line segments to the plot
 lines(x = 1:nrow(eigenvalues), eigenvalues[, 2], 
       type="b", pch=19, col = "red")
 fviz_screeplot(res.pca, ncp=10)
@@ -62,10 +61,6 @@ print(categories)
 library("corrplot")
 corrplot(var$contrib, is.corr = FALSE)
 # Contributions of variables on Dim.1
-fviz_contrib(res.pca, choice = "var", axes = 1)
-# Control category point colors using their contribution
-# Possible values for the argument col.row are :
-# "cos2", "contrib", "coord", "x", "y"
 fviz_mca_var(res.pca, col.var = "contrib")
 
 library("corrplot")
