@@ -34,19 +34,13 @@ res.desc$Dim.2
 
 
 explor(res.pca)
-# 5 FIRST COMPONENTS EXPLAIN 89.1% OF THE VARIABILITY
+
 ind <- get_pca_ind(res.pca)
 head(ind)
 head(ind$coord)
 cont_p=res.pca$ind$coord
 summary(res.pca, nb.dec = 2, ncp = 2)
 dev.off()
-
-# The plot above helps to identify variables that are the most 
-# correlated with each dimension. The squared correlations between variables and the dimensions are used as coordinates.
-
-# It can be seen that, the drugs mucolytics and laba lama are the most correlated with dimension 1. Similarly, saba sama sama are the most correlated with dimension 2.
-# saba contributes the same
 var= get_pca_var(res.pca)
 var
 # coordinates
