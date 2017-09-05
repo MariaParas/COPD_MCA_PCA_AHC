@@ -18,7 +18,7 @@
 
 #1.Research Cohort Creation-->Castalbi_et_all_pca_article
 
-#2.In order to obtain the final cluster run the following starting from Step1, Step2, until Step5
+#2.In order to obtain the final cluster run the following starting from Step1, Step2, until Step6
 
 
 #Individuals and Co-variates-->Step1_Final_manip
@@ -31,6 +31,7 @@
 
 #Case Study 1 & Case Study 2-->STEP4_Final_ahc, Step4ii_Final_HCindex-
 #wss_for_clusters_from_Practical_Data_Science_with_R_Zumel_Mount,
-#Step5_Final_interval calculation
+#Step5_Final_interval calculation,
+#Step6_Final_ChiSq+ANOVA_clusters
 
 #NOTE: FOR THE HC INDEX WE USED THE CODE OF ZUMEL AND MOUNT AS THEY PROVIDED IN THEIR BOOK "PRACTICAL DATA SCIENCE WITH R"
